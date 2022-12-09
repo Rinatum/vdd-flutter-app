@@ -12,9 +12,14 @@ import 'package:cpmdwithf_project/domain/image_storage.dart';
 import 'screens/auth.dart';
 import 'data/theme_change.dart';
 
+// import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:easy_localization/easy_localization.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
   await Firebase.initializeApp();
+
   runApp(
     const HomePage(),
   );
@@ -28,7 +33,6 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  // DarkThemeProvider themeChangeProvider = DarkThemeProvider();
 
   @override
   void initState() {
@@ -42,7 +46,13 @@ class HomePageState extends State<HomePage> {
       initialData: null,
       child: ChangeNotifierProvider<DarkThemeProvider>(
         create: (context) => DarkThemeProvider(),
-        child: const LandingPage(),
+        child: EasyLocalization(
+            supportedLocales: const [Locale('en', 'US'), Locale('ru', 'RU')],
+            path: 'assets/translations',
+            fallbackLocale: const Locale('en', 'US'),
+            startLocale: const Locale("en", "US"),
+            child:const LandingPage(),
+        ),
       ),
     );
   }
@@ -63,18 +73,27 @@ class LandingPage extends StatelessWidget {
           brightness: themeChangeProvider.darkTheme
               ? Brightness.dark
               : Brightness.light),
-      darkTheme: ThemeData(
-        primarySwatch: Colors.grey,
-        brightness: Brightness.dark,
-        /* dark theme settings */
-      ),
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       home: isLoggedIn ? const MyApp() : const AuthorizationPage(),
     );
   }
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  MyAppState createState() => MyAppState();
+}
+
+class MyAppState extends State<MyApp> {
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   static const List<Tab> tabs = <Tab>[
     Tab(

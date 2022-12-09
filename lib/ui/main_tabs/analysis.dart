@@ -1,5 +1,6 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,8 +10,6 @@ import 'package:before_after/before_after.dart';
 
 class AnalysisScreen extends StatefulWidget {
   const AnalysisScreen({super.key});
-
-  final String title = 'Analysis Screen';
 
   @override
   State<AnalysisScreen> createState() => _AnalysisScreenState();
@@ -32,7 +31,22 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("analysis_title".tr()),
+        actions: [
+          IconButton(
+              onPressed: () {
+                if (context.locale.toString() == "en_US") {
+                  setState(() {
+                    context.setLocale(const Locale("ru", "RU"));
+                  });
+                } else {
+                  setState(() {
+                    context.setLocale(const Locale("en", "US"));
+                  });
+                }
+              },
+              icon: const Icon(Icons.language))
+        ],
       ),
       body: SafeArea(
         // SafeArea to make sure the user can see the whole app without obstructions
@@ -42,8 +56,8 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
             children: <Widget>[
               MaterialButton(
                   color: Colors.blue,
-                  child: const Text("Send images to analysis",
-                      style: TextStyle(
+                  child: Text("analysis_send".tr(),
+                      style: const TextStyle(
                           color: Colors.white70, fontWeight: FontWeight.bold)),
                   onPressed: () async {
                     _damageResultList = await analyzeImage();
@@ -52,7 +66,7 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
                   }),
               const Padding(padding: EdgeInsets.all(10.0)),
               Text(
-                'This is Analysis Screen',
+                'analysis_info'.tr(),
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               _buttonClicked
@@ -60,8 +74,8 @@ class _AnalysisScreenState extends State<AnalysisScreen> {
                       damageResultList: _damageResultList,
                     )
                   : imagesList.isNotEmpty()
-                      ? const Text("Files ready to be sent")
-                      : const Text("Add photos before sending!"),
+                      ? Text("analysis_ready_to_send".tr())
+                      : Text("error_analysis_no_files".tr()),
             ],
           ),
         ),

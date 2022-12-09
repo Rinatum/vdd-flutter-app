@@ -1,0 +1,13 @@
+{
+  "photo_title": "Сфотографируйте повреждение!",
+  "error_no_image": "Не выбрано ни одной картинки!",
+  "snackbar_image_saved": "Фото сохранено!",
+  "display_picture": "Показать фото",
+  "gallery_title": "Выберите фото из Галереи!",
+  "gallery_pick": "Выберите фотографию из своей Галереи",
+  "analysis_title": "Анализ повреждений",
+  "analysis_send": "Отправте фото на анализ",
+  "analysis_info": "Экран анализа",
+  "analysis_ready_to_send": "Файлы готовы к отправке",
+  "error_analysis_no_files": "Добавте фото перед отправкой!"
+}
