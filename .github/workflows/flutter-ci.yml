@@ -51,13 +51,8 @@ jobs:
         include:
           - target: android
             os: ubuntu-latest
-            build-args: 'apk --split-per-abi'
+            build-args: 'apk --split-per-abi --no-sound-null-safety'
             java-version: '11'
-
-          - target: iOS
-            os: macos-latest
-            build-args: 'ipa'
-            import-certs: true
 
     steps:
       - uses: actions/checkout@v3
@@ -96,4 +91,4 @@ jobs:
         with:
           flutter-version: '3.3.4'
           cache: true
-      - run: flutter build --no-sound-null-safety ${{ matrix.build-args }}
+      - run: flutter build ${{ matrix.build-args }}
