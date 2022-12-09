@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cpmdwithf_project/domain/image_storage.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:image_picker/image_picker.dart';
@@ -35,7 +36,24 @@ class TakePictureScreenState extends State<TakePictureScreen> {
     final imagesList = context.watch<ImageStorage>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Take a picture')),
+      appBar: AppBar(
+        title: Text("photo_title".tr()),
+        actions: [
+          IconButton(
+              onPressed: () {
+                if (context.locale.toString() == "en_US") {
+                  setState(() {
+                    context.setLocale(const Locale("ru", "RU"));
+                  });
+                } else {
+                  setState(() {
+                    context.setLocale(const Locale("en", "US"));
+                  });
+                }
+              },
+              icon: const Icon(Icons.language))
+        ],
+      ),
       // for testing purposes this will be like that
       body: SafeArea(
         child: imagesList.isNotEmpty()
@@ -53,7 +71,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
                   );
                 },
               )
-            : const Text('No image selected'),
+            : Text('error_no_image'.tr()),
       ),
       floatingActionButton: FloatingActionButton(
         // Provide an onPressed callback.
@@ -65,9 +83,9 @@ class TakePictureScreenState extends State<TakePictureScreen> {
           // update the look of the screen and display a snack-bar message
           setState(() {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Image saved'),
-                duration: Duration(seconds: 1),
+              SnackBar(
+                content: Text('snackbar_image_saved'.tr()),
+                duration: const Duration(seconds: 1),
               ),
             );
           });
@@ -87,7 +105,7 @@ class DisplayPictureScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Display the Picture')),
+      appBar: AppBar(title: Text('display_picture'.tr())),
       // The image is stored as a file on the device. Use the `Image.file`
       // constructor with the given path to display the image.
       body: Image.file(File(imagePath)),
