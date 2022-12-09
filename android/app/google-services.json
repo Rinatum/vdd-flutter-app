@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255917023446",
+    "project_id": "damagedetectiom",
+    "storage_bucket": "damagedetectiom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255917023446:android:b489b1310b077e5b7ba977",
+        "android_client_info": {
+          "package_name": "com.detect.damage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255917023446-4pl7r6k5v4mjvs1sg80vk196eb7npf0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsDwMsHDgbmvpjYZqsiUOkW3G8c24al1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255917023446-4pl7r6k5v4mjvs1sg80vk196eb7npf0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
