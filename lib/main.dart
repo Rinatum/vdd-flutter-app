@@ -33,7 +33,6 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-
   @override
   void initState() {
     super.initState();
@@ -47,11 +46,11 @@ class HomePageState extends State<HomePage> {
       child: ChangeNotifierProvider<DarkThemeProvider>(
         create: (context) => DarkThemeProvider(),
         child: EasyLocalization(
-            supportedLocales: const [Locale('en', 'US'), Locale('ru', 'RU')],
-            path: 'assets/translations',
-            fallbackLocale: const Locale('en', 'US'),
-            startLocale: const Locale("en", "US"),
-            child:const LandingPage(),
+          supportedLocales: const [Locale('en', 'US'), Locale('ru', 'RU')],
+          path: 'assets/translations',
+          fallbackLocale: const Locale('en', 'US'),
+          startLocale: const Locale("en", "US"),
+          child: const LandingPage(),
         ),
       ),
     );
@@ -89,7 +88,6 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-
   @override
   void initState() {
     super.initState();
