@@ -20,7 +20,7 @@ The code of this project is divided according to their function within the app. 
 
 When the you start the application, first thing you will see is the `Login Screen`. For now, it is only possible to login with provided credentials. The app does not track your login state, thus, you will have to login every time you launh the app.
 
-After you successfully login into the application, the first screen you see will be `Photo Screen` with several tabs at the top. On the `Photo Screen` you can take the photos of the damage on your car from your phone's camera. Each photo taken will be displayed in a nice scrollable grid.
+After you successfully login into the application, the first screen you see will be `Photo Screen` with several tabs at the top. The rightmost button is the switch between `Light Mode` and `Dark mode`. In the `Dark mode` most of the app's features will be darkened. On the `Photo Screen` you can take the photos of the damage on your car from your phone's camera. Each photo taken will be displayed in a nice scrollable grid. Also, next to the `Take a picture!` there is a localization switch button. This button is present on each screen. This button will switch current localization between `English` and `Russian`.
 
 Next screen that you might want to use is the `Gallery Screen`. It contains the same functionality as the `Photo Screen`, but the only difference is that the photo will be taken from your phone's galerry. It is important to note that the photos selected on either screen will be saved in the internal memory and will persist between each screen, allowing you to take photos from both camera and gallery at the same time. However, the selected photos will persist if you relaunch the application.
 
