@@ -47,7 +47,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        target: ['iOS', 'android']
+        target: ['android']
         include:
           - target: android
             os: ubuntu-latest
@@ -103,4 +103,4 @@ jobs:
           key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-pods-
-      - run: flutter build ${{ matrix.build-args }}
+      - run: flutter build --no-sound-null-safety ${{ matrix.build-args }}
