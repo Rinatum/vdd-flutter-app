@@ -1,12 +1,8 @@
 name: Flutter CI
 
-# This workflow is triggered on pushes to the repository.
-
 on:
   push:
 #  pull_request:
-
-
 
 jobs:
   analyze:
@@ -22,3 +18,24 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter format --set-exit-if-changed .
+
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.3.4'
+          cache: true
+      - run: flutter pub get
+      - run: flutter test --no-sound-null-safety
+        id: test
+      - if: ${{ failure() && steps.test.conclusion == 'failure' }}
+        name: 'Upload test failures'
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-failures
+          path: test/failures
+          retention-days: 5
