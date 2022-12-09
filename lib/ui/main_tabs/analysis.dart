@@ -1,3 +1,5 @@
+// ignore_for_file: import_of_legacy_library_into_null_safe
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -80,13 +82,11 @@ class DamageResultList extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         itemCount: damageResultList.length,
         itemBuilder: (BuildContext context, int index) {
-          return Container(
-            child: Center(
-                child: BeforeAfter(
-              beforeImage: Image(image: damageResultList[index].originalImg),
-              afterImage: Image(image: damageResultList[index].damageImg),
-            )),
-          );
+          return Center(
+              child: BeforeAfter(
+            beforeImage: Image(image: damageResultList[index].originalImg),
+            afterImage: Image(image: damageResultList[index].damageImg),
+          ));
         },
         separatorBuilder: (BuildContext context, int index) => const Divider(),
       ),

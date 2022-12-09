@@ -12,7 +12,6 @@ class AuthService {
       User? user = result.user;
       return UserOur.fromFirebase(user!);
     } catch (e) {
-      print(e);
       return null;
     }
   }
@@ -25,7 +24,6 @@ class AuthService {
       User? user = result.user;
       return UserOur.fromFirebase(user!);
     } catch (e) {
-      print(e);
       return null;
     }
   }

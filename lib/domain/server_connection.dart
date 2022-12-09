@@ -12,9 +12,7 @@ analyzeImage() async {
     baseUrl: baseUrl,
   ));
   final Response<dynamic> response = await dio.get('/analyze');
-  print(response.data.toString());
   DamageReport damageReport = DamageReport.fromJson(response.data);
-  print(baseUrl + p.join(damageReport.inputsPrefix, damageReport.imgNames[0]));
   damageResultList = damageReport.imgNames
       .map((imgName) => DamageResult(
           NetworkImage(
@@ -26,8 +24,8 @@ analyzeImage() async {
 }
 
 class DamageResult {
-  final originalImg;
-  final damageImg;
+  final NetworkImage originalImg;
+  final NetworkImage damageImg;
 
   const DamageResult(this.originalImg, this.damageImg);
 }

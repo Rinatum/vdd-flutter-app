@@ -4,13 +4,11 @@ import 'domain/user.dart';
 import 'package:cpmdwithf_project/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 import 'ui/main_tabs/photo.dart';
 import 'ui/main_tabs/gallery.dart';
 import 'ui/main_tabs/analysis.dart';
 import 'package:cpmdwithf_project/domain/image_storage.dart';
-import 'services/auth.dart';
 import 'screens/auth.dart';
 
 Future<void> main() async {
