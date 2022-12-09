@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/cloud_firestore/intermediates/merged_res/release/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/cloud_firestore/intermediates/merged_res/release/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/res/values-pt-rPT/values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/cloud_firestore/intermediates/incremental/mergeReleaseResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/cloud_firestore/intermediates/incremental/mergeReleaseResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/res/values-pt-rPT/values.xml",

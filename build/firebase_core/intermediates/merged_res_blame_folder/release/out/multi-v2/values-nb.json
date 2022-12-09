@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_core/intermediates/merged_res/release/values-nb/values-nb.xml",
+            "outputFile": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_core/intermediates/merged_res/release/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/values-nb/values-nb.xml",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "outputFile": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/values-nb/values-nb.xml",

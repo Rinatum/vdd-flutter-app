@@ -1,62 +1,62 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.detect.damage"
-4    android:versionCode="1"
+4    android:versionCode="4001"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml
+8-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml
+9-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-11-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:3:5-77
-11-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:3:22-74
+11-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:3:5-77
+11-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:3:22-74
 12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-12-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:4:5-75
-12-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:4:22-72
+12-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:4:5-75
+12-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:4:22-72
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:5:5-67
-13-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:5:22-64
+13-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:5:5-67
+13-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:5:22-64
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:6:5-79
-14-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:6:22-76
+14-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:6:5-79
+14-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:6:22-76
 15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-15-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:7:5-76
-15-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:7:22-73
+15-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:7:5-76
+15-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:7:22-73
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->[:camera_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-65
-16-->[:camera_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-62
+16-->[:camera_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-65
+16-->[:camera_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-62
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->[:camera_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-71
-17-->[:camera_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-68
+17-->[:camera_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-71
+17-->[:camera_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/camera_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-68
 18
 19    <application
 20        android:name="android.app.Application"
-20-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:10:9-42
+20-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:10:9-42
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.8.0] /Users/rmullakhmetov/.gradle/caches/transforms-3/0ce731f8c62e88af9af421907435d7da/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 22        android:icon="@mipmap/launcher_icon"
-22-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:12:8-44
+22-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:12:8-44
 23        android:label="cpmdwithf_project" >
-23-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:9:9-42
+23-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:9:9-42
 24        <activity
-24-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:13:9-34:20
+24-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:13:9-34:20
 25            android:name="com.example.cpmdwithf_project.MainActivity"
-25-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:14:13-41
+25-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:14:13-41
 26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-26-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:18:13-163
+26-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:18:13-163
 27            android:exported="true"
-27-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:15:13-36
+27-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:15:13-36
 28            android:hardwareAccelerated="true"
-28-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:19:13-47
+28-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:19:13-47
 29            android:launchMode="singleTop"
-29-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:16:13-43
+29-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:16:13-43
 30            android:theme="@style/LaunchTheme"
-30-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:17:13-47
+30-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:17:13-47
 31            android:windowSoftInputMode="adjustResize" >
-31-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:20:13-55
+31-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:20:13-55
 32
 33            <!--
 34                 Specifies an Android theme to apply to this Activity as soon as
@@ -65,21 +65,21 @@
 37                 to determine the Window background behind the Flutter UI.
 38            -->
 39            <meta-data
-39-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:26:13-29:17
+39-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:26:13-29:17
 40                android:name="io.flutter.embedding.android.NormalTheme"
-40-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:27:15-70
+40-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:27:15-70
 41                android:resource="@style/NormalTheme" />
-41-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:28:15-52
+41-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:28:15-52
 42
 43            <intent-filter>
-43-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:30:13-33:29
+43-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:30:13-33:29
 44                <action android:name="android.intent.action.MAIN" />
-44-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:31:17-68
-44-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:31:25-66
+44-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:31:17-68
+44-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:31:25-66
 45
 46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:32:17-76
-46-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:32:27-74
+46-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:32:17-76
+46-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:32:27-74
 47            </intent-filter>
 48        </activity>
 49        <!--
@@ -87,38 +87,38 @@
 51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 52        -->
 53        <meta-data
-53-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:37:9-39:33
+53-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:37:9-39:33
 54            android:name="flutterEmbedding"
-54-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:38:13-44
+54-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:38:13-44
 55            android:value="2" />
-55-->/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/AndroidManifest.xml:39:13-30
+55-->/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/AndroidManifest.xml:39:13-30
 56
 57        <service
-57-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+57-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
 58            android:name="com.google.firebase.components.ComponentDiscoveryService"
-58-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-89
+58-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-89
 59            android:directBootAware="true"
 59-->[com.google.firebase:firebase-common:20.1.2] /Users/rmullakhmetov/.gradle/caches/transforms-3/51d5a07600719f8767e44db6f2a9636e/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
 60            android:exported="false" >
 60-->[com.google.firebase:firebase-auth:21.0.8] /Users/rmullakhmetov/.gradle/caches/transforms-3/c3ab1ab857f2eedf147850d11689a491/transformed/jetified-firebase-auth-21.0.8/AndroidManifest.xml:66:13-37
 61            <meta-data
-61-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+61-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
 62                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-62-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+62-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
 63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+63-->[:firebase_auth] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
 64            <meta-data
-64-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/flutter-client/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+64-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
 65                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-65-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/flutter-client/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
+65-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
 66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/flutter-client/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+66-->[:cloud_firestore] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
 67            <meta-data
-67-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+67-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
 68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-68-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+68-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
 69                android:value="com.google.firebase.components.ComponentRegistrar" />
-69-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/flutter-client/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+69-->[:firebase_core] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
 70            <meta-data
 70-->[com.google.firebase:firebase-auth:21.0.8] /Users/rmullakhmetov/.gradle/caches/transforms-3/c3ab1ab857f2eedf147850d11689a491/transformed/jetified-firebase-auth-21.0.8/AndroidManifest.xml:67:13-69:85
 71                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -134,21 +134,21 @@
 76        </service>
 77
 78        <provider
-78-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+78-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
 79            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-79-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+79-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
 80            android:authorities="com.detect.damage.flutter.image_provider"
-80-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+80-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
 81            android:exported="false"
-81-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+81-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
 82            android:grantUriPermissions="true" >
-82-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+82-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
 83            <meta-data
-83-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+83-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
 84                android:name="android.support.FILE_PROVIDER_PATHS"
-84-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+84-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
 85                android:resource="@xml/flutter_image_picker_file_paths" />
-85-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/flutter-client/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+85-->[:image_picker_android] /Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
 86        </provider>
 87
 88        <uses-library

@@ -1,44 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/rmullakhmetov/StudioProjects/flutter-client/build/app/generated/res/google-services/release/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,713",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "194,276,380,489,609,708,784"
-                    },
-                    "to": {
-                        "startLines": "127,131,132,133,134,135,136",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9016,9375,9457,9561,9670,9790,9889",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "9155,9452,9556,9665,9785,9884,9960"
-                    }
-                },
-                {
-                    "source": "/Users/rmullakhmetov/StudioProjects/flutter-client/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "138,143",
-                        "startColumns": "4,4",
-                        "startOffsets": "10036,10344",
-                        "endLines": "142,145",
-                        "endColumns": "12,12",
-                        "endOffsets": "10339,10508"
-                    }
-                },
                 {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/19fea4fb28dedd992824e13cc158e7a1/transformed/jetified-play-services-base-18.0.1/res/values/values.xml",
                     "from": {
@@ -95,6 +59,25 @@
                     }
                 },
                 {
+                    "source": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "138,143",
+                        "startColumns": "4,4",
+                        "startOffsets": "10036,10344",
+                        "endLines": "142,145",
+                        "endColumns": "12,12",
+                        "endOffsets": "10339,10508"
+                    }
+                },
+                {
                     "source": "/Users/rmullakhmetov/.gradle/caches/transforms-3/827059b5dbdd36f4518b82e011631b76/transformed/lifecycle-runtime-2.3.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -145,6 +128,23 @@
                         "startOffsets": "661,719,785,848,1713,1784,8948,9160,9227,9306",
                         "endColumns": "57,65,62,61,70,71,67,66,78,68",
                         "endOffsets": "714,780,843,905,1779,1851,9011,9222,9301,9370"
+                    }
+                },
+                {
+                    "source": "/Users/rmullakhmetov/StudioProjects/vdd-flutter-app/build/app/generated/res/google-services/release/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,713",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "194,276,380,489,609,708,784"
+                    },
+                    "to": {
+                        "startLines": "127,131,132,133,134,135,136",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9016,9375,9457,9561,9670,9790,9889",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "9155,9452,9556,9665,9785,9884,9960"
                     }
                 }
             ]
