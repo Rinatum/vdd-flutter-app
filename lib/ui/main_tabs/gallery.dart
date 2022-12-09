@@ -1,14 +1,13 @@
 import 'dart:io';
 
 import 'package:cpmdwithf_project/domain/image_storage.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
 class GalleryScreen extends StatefulWidget {
   const GalleryScreen({super.key});
-
-  final String title = 'Gallery Screen';
 
   @override
   State<GalleryScreen> createState() => _GalleryScreenState();
@@ -31,15 +30,30 @@ class _GalleryScreenState extends State<GalleryScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Image Picker Example"),
+        title: Text("gallery_title".tr()),
+        actions: [
+          IconButton(
+              onPressed: () {
+                if (context.locale.toString() == "en_US") {
+                  setState(() {
+                    context.setLocale(const Locale("ru", "RU"));
+                  });
+                } else {
+                  setState(() {
+                    context.setLocale(const Locale("en", "US"));
+                  });
+                }
+              },
+              icon: const Icon(Icons.language))
+        ],
       ),
       body: SafeArea(
         child: Column(
           children: [
             MaterialButton(
                 color: Colors.blue,
-                child: const Text("Pick Image from Gallery",
-                    style: TextStyle(
+                child: Text("gallery_pick".tr(),
+                    style: const TextStyle(
                         color: Colors.white70, fontWeight: FontWeight.bold)),
                 onPressed: () async {
                   // take the photo from the gallery and make sure that the photo was taken (not null)
@@ -50,9 +64,9 @@ class _GalleryScreenState extends State<GalleryScreen> {
                   // update the look of the screen and display a snack-bar message
                   setState(() {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Image saved'),
-                        duration: Duration(seconds: 1),
+                      SnackBar(
+                        content: Text('snackbar_image_saved'.tr()),
+                        duration: const Duration(seconds: 1),
                       ),
                     );
                   });
@@ -76,7 +90,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                       },
                     ),
                   )
-                : const Text('No image selected'),
+                : Text('error_no_image'.tr()),
           ],
         ),
       ),

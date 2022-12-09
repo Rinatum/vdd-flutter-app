@@ -1,0 +1,13 @@
+{
+  "photo_title": "Take a picture!",
+  "error_no_image": "No image selected!",
+  "snackbar_image_saved": "Image saved!",
+  "display_picture": "Display the picture",
+  "gallery_title": "Get a picture from your Gallery!",
+  "gallery_pick": "Pick an image from Gallery",
+  "analysis_title": "Analysis Screen",
+  "analysis_send": "Send your images to analysis",
+  "analysis_info": "This is Analysis Screen",
+  "analysis_ready_to_send": "Files are ready to be sent",
+  "error_analysis_no_files": "Add photos before sending!"
+}
