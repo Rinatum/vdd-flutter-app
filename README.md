@@ -31,7 +31,7 @@ Final screen of the application is the `Analysis Screen`. Here you can send sele
 
 Demonstration of the work :
 
-<img src="mid_proj_demo.gif" width="300" height="600" />
+<img src="final_proj_demo.gif" width="300" height="600" />
 
 ## Install
 

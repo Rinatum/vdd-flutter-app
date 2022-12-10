@@ -51,7 +51,7 @@ jobs:
         include:
           - target: android
             os: ubuntu-latest
-            build-args: 'apk --split-per-abi --no-sound-null-safety'
+            build-args: 'apk --no-sound-null-safety --release'
             java-version: '11'
 
     steps:
@@ -67,7 +67,7 @@ jobs:
           cache: true
       - run: flutter build ${{ matrix.build-args }}
       - name: Upload apk
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v1
         with:
-          name: upload-build-apk
-          path: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+          name: release-apk
+          path: build/app/outputs/flutter-apk/release/app-release.apk
